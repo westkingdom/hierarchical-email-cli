@@ -85,7 +85,7 @@ class Commands extends \Robo\Tasks implements LoggerAwareInterface
         $controller = new GoogleAppsGroupsController($client, $batchWrapper);
 
         // TODO: better location for state file
-        $stateFile = dirname(__DIR__) . '/' . $options['state-file'];
+        $stateFile = $options['state-file'];
         $groupData = file_get_contents($stateFile);
         $currentState = Yaml::parse($groupData);
 
