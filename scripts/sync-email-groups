@@ -1,8 +1,0 @@
-#!/bin/bash
-
-echo "# Fetching group data from westkingdom.org"
-echo drush @wk.live wkx \> server.westkingdom.org.yaml
-drush @wk.live wkx > server.westkingdom.org.yaml
-
-echo "# Updating google groups"
-echo hge sync server.westkingdom.org.yaml
