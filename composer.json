@@ -23,8 +23,7 @@
     "phpspec/prophecy-phpunit": "~1.0"
   },
   "bin": [
-    "scripts/hge",
-    "scripts/sync-email-groups"
+    "scripts/hge"
   ],
   "autoload": {
     "psr-4": {
