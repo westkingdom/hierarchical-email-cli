@@ -5,4 +5,4 @@ echo drush @wk.live wkx \> server.westkingdom.org.yaml
 drush @wk.live wkx > server.westkingdom.org.yaml
 
 echo "# Updating google groups"
-echo ./scripts/hge sync server.westkingdom.org.yaml
+echo hge sync server.westkingdom.org.yaml
