@@ -12,6 +12,7 @@
       "role": "Developer"
     }
   ],
+  "minimum-stability": "beta",
   "require": {
     "westkingdom/hierarchical-group-email": "~1",
     "consolidation/Robo": "dev-master",
