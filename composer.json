@@ -14,8 +14,8 @@
   ],
   "minimum-stability": "beta",
   "require": {
-    "westkingdom/hierarchical-group-email": "~1",
-    "consolidation/Robo": "dev-master",
+    "westkingdom/hierarchical-group-email": "^1",
+    "consolidation/Robo": "^1",
     "symfony/yaml": "~2.2"
   },
   "require-dev": {
