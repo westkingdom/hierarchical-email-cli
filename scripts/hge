@@ -17,5 +17,5 @@ if ($pharPath) {
 
 $commandClasses = [ \Westkingdom\HierarchicalGroupEmail\Commands::class ];
 $runner = new \Robo\Runner($commandClasses);
-$statusCode = $runner->execute($_SERVER['argv'], 'hge', '0.1.0');
+$statusCode = $runner->execute($_SERVER['argv'], 'hge', '0.2.5');
 exit($statusCode);
