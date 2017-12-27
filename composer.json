@@ -35,6 +35,13 @@
       "Westkingdom\\HierarchicalGroupEmail\\":    "tests"
     }
   },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true,
+        "platform": {
+            "php": "5.5"
+        }
+    },
   "extra": {
     "branch-alias": {
         "dev-master": "1.0.x-dev"
