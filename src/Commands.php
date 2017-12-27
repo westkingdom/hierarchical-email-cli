@@ -60,6 +60,34 @@ class Commands extends \Robo\Tasks implements LoggerAwareInterface
         return $client;
     }
 
+    public function fetch(
+        $outputFile,
+        $options =
+        [
+            'domain' => 'westkingdom.org',
+            'auth-file' => 'service-account.yaml',
+            'subdomains' => 'allyshia,champclair,crosston,cynagua,heralds,marches,mists,oertha',
+        ])
+    {
+        $client = $this->authenticate($options['auth-file'], $this->scopes);
+
+        $properties = [
+          'subdomains' => $options['subdomains'],
+        ];
+
+        $policy = new StandardGroupPolicy($options['domain'], $properties);
+        $batch = new \Google_Http_Batch($client);
+        $batchWrapper = new BatchWrapper($batch);
+        $controller = new GoogleAppsGroupsController($client, $batchWrapper);
+
+        $existing = $controller->fetch($options['domain']);
+        $dumper = new Dumper();
+        $dumper->setIndentation(2);
+        $existingAsYaml = trim($dumper->dump($existing, PHP_INT_MAX));
+
+        file_put_contents($outputFile, $existingAsYaml);
+    }
+
     public function sync(
         $sourceFile,
         $options =
