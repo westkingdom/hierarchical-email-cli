@@ -101,7 +101,13 @@ class Commands extends \Robo\Tasks implements LoggerAwareInterface
         $client = $this->authenticate($options['auth-file'], $this->scopes);
 
         $groupData = file_get_contents($sourceFile);
+        if (empty($groupData)) {
+            throw new \Exception('Source file is empty.');
+        }
         $newState = Yaml::parse($groupData);
+        if (empty($newState)) {
+            throw new \Exception('Source file does not contain valid yml.');
+        }
 
         $properties = [
           'subdomains' => $options['subdomains'],

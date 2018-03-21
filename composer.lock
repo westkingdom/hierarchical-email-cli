@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "09f221ea1945f34efb4d757831b9a93d",
+    "content-hash": "df9dea2d241485985d6182243d975329",
     "packages": [
         {
             "name": "consolidation/annotated-command",
@@ -1186,16 +1186,16 @@
         },
         {
             "name": "westkingdom/hierarchical-group-email",
-            "version": "1.0.3",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/westkingdom/hierarchical-group-email.git",
-                "reference": "17dfe1cd376984da90c8dbbc6c7a2a42f016b2df"
+                "reference": "c4c1215f1ce2420892fa5e2a7be71d9777d9a4f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/westkingdom/hierarchical-group-email/zipball/17dfe1cd376984da90c8dbbc6c7a2a42f016b2df",
-                "reference": "17dfe1cd376984da90c8dbbc6c7a2a42f016b2df",
+                "url": "https://api.github.com/repos/westkingdom/hierarchical-group-email/zipball/c4c1215f1ce2420892fa5e2a7be71d9777d9a4f6",
+                "reference": "c4c1215f1ce2420892fa5e2a7be71d9777d9a4f6",
                 "shasum": ""
             },
             "require": {
@@ -1232,7 +1232,7 @@
             ],
             "description": "The Hierarchical Group Email library utilizes the Google Apps API to manage the membership lists for Google Groups.  Additional email forwards are automatically created for collections of groups, making it possible to email all of the groups in a branch, or all of the same group type in every branch.",
             "homepage": "https://github.com/westkingdom/hierarchical-group-email",
-            "time": "2017-12-27T05:43:46+00:00"
+            "time": "2018-03-21T20:31:29+00:00"
         }
     ],
     "packages-dev": [

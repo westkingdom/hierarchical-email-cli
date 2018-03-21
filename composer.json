@@ -14,9 +14,9 @@
   ],
   "minimum-stability": "beta",
   "require": {
-    "westkingdom/hierarchical-group-email": "^1",
     "consolidation/Robo": "^1",
-    "symfony/yaml": "~2.2"
+    "symfony/yaml": "~2.2",
+    "westkingdom/hierarchical-group-email": "^1.0.5"
   },
   "require-dev": {
     "phpunit/phpunit": "^3.5",
